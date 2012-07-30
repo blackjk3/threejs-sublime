@@ -1,0 +1,150 @@
+{
+        "scope": "source.js,source.js.embedded.html,source.coffee",
+        "version": "r49",
+        "completions":
+        [
+              "THREE",
+              
+              { "trigger": "THREE.PerspectiveCamera", "contents": "THREE.PerspectiveCamera( ${1:fov}, ${2:aspect}, ${3:near}, ${4:far} );$0" },
+              { "trigger": "THREE.OrthographicCamera", "contents": "THREE.OrthographicCamera( ${1:left}, ${2:right}, ${3:top}, ${4:bottom}, ${5:near}, ${6:far} );$0" },
+              
+              { "trigger": "THREE.Clock", "contents": "THREE.Clock( ${1:autoStart} );$0" },
+              { "trigger": "THREE.Color", "contents": "THREE.Color( ${1:hex} );$0" },
+              { "trigger": "THREE.Face3", "contents": "THREE.Face3( a, b, c, normal, color, materialIndex );$0" },
+              { "trigger": "THREE.Face4", "contents": "Face4( a, b, c, d, normal, color, materialIndex );$0" },
+              { "trigger": "THREE.Frustrum", "contents": "THREE.Frustrum();$0" },
+              { "trigger": "THREE.Geometry", "contents": "THREE.Geometry();$0" },
+                                                          
+              { "trigger": "THREE.Math", "contents": "THREE.Math;$0" },
+              { "trigger": "THREE.Matrix3", "contents": "THREE.Matrix3();$0" },
+              { "trigger": "THREE.Matrix4", "contents": "THREE.Matrix4( n11, n12, n13, n14, n21, n22, n23, n24, n31, n32, n33, n34, n41, n42, n43, n44 );$0" },
+              { "trigger": "THREE.Object3D", "contents": "THREE.Object3D();$0" },
+              
+              { "trigger": "THREE.Projector", "contents": "THREE.Projector();$0" },
+              { "trigger": "THREE.Quaternion", "contents": "THREE.Quaternion();$0" },
+              { "trigger": "THREE.Ray", "contents": "THREE.Ray();$0" },
+              { "trigger": "THREE.Rectangle", "contents": "THREE.Rectangle();$0" },
+              { "trigger": "THREE.Spline", "contents": "THREE.Spline();$0" },
+
+              { "trigger": "THREE.UV", "contents": "THREE.UV( u, v );$0" },
+              { "trigger": "THREE.Vector2", "contents": "THREE.Vector2( ${1:x}, ${2:y} );$0" },
+              { "trigger": "THREE.Vector3", "contents": "THREE.Vector3( ${1:x}, ${2:y}, ${3:z} );$0" },
+              { "trigger": "THREE.Vector4", "contents": "THREE.Vector4( ${1:x}, ${2:y}, ${3:z}, ${4:w} );$0" },
+
+              { "trigger": "THREE.Light", "contents": "THREE.Light( ${1:hex} );$0" },
+              { "trigger": "THREE.AmbientLight", "contents": "THREE.AmbientLight( ${1:hex} );$0" },
+              { "trigger": "THREE.DirectionalLight", "contents": "THREE.DirectionalLight( ${1:hex, ${2:intensity}, ${3:distance} );$0" },
+              { "trigger": "THREE.PointLight", "contents": "THREE.PointLight( ${1:color}, ${2:intensity}, ${3:distance} );$0" },
+              { "trigger": "THREE.SpotLight", "contents": "THREE.SpotLight();$0" },
+              
+              { "trigger": "THREE.Loader", "contents": "Loader();$0" },
+              { "trigger": "THREE.BinaryLoader", "contents": "BinaryLoader();$0" },
+              { "trigger": "THREE.JSONLoader", "contents": "JSONLoader();$0" },
+              { "trigger": "THREE.SceneLoader", "contents": "SceneLoader();$0" },
+              
+              { "trigger": "THREE.Material", "contents": "Material( ${1:parameters} );$0" },
+              { "trigger": "THREE.LineBasicMaterial", "contents": "LineBasicMaterial( ${1:parameters} );$0" },
+              { "trigger": "THREE.MeshBasicMaterial", "contents": "MeshBasicMaterial( ${1:parameters} );$0" },
+              { "trigger": "THREE.MeshDepthMaterial", "contents": "MeshDepthMaterial( ${1:parameters} );$0" },
+              { "trigger": "THREE.MeshFaceMaterial", "contents": "MeshFaceMaterial( ${1:parameters} );$0" },
+              { "trigger": "THREE.MeshLambertMaterial", "contents": "MeshLambertMaterial( ${1:parameters} );$0" },
+              { "trigger": "THREE.MeshNormalMaterial", "contents": "MeshNormalMaterial( ${1:parameters} );$0" },
+              { "trigger": "THREE.MeshPhongMaterial", "contents": "MeshPhongMaterial( ${1:parameters} );$0" },
+              { "trigger": "THREE.ParticleBasicMaterial", "contents": "ParticleBasicMaterial( ${1:parameters} );$0" },
+              { "trigger": "THREE.ParticleCanvasMaterial", "contents": "ParticleCanvasMaterial( ${1:parameters} );$0" },
+              { "trigger": "THREE.ParticleDOMMaterial", "contents": "ParticleDOMMaterial( ${1:parameters} );$0" },
+              { "trigger": "THREE.ShaderMaterial", "contents": "ShaderMaterial( ${1:parameters} );$0" },
+
+              { "trigger": "THREE.Bone", "contents": "THREE.Bone( belongsToSkin );$0" },
+              { "trigger": "THREE.Line", "contents": "THREE.Line( geometry, material, type );$0" },
+              { "trigger": "THREE.ShaderMaterial", "contents": "THREE.LOD();$0" },
+              { "trigger": "THREE.Mesh", "contents": "THREE.Mesh(${1:geometry}, ${2:material});$0" },
+              { "trigger": "THREE.MorphAnimMesh", "contents": "THREE.MorphAnimMesh( ${1:geometry}, ${2:material});$0;" },
+              { "trigger": "THREE.Particle", "contents": "THREE.Particle( ${1:material} );$0" },
+              { "trigger": "THREE.ParticleSystem", "contents": "THREE.ParticleSystem( ${1:geometry}, ${2:material});$0" },
+              { "trigger": "THREE.Ribbon", "contents": "THREE.Ribbon( ${1:geometry}, ${2:material});$0" },
+              { "trigger": "THREE.SkinnedMesh", "contents": "THREE.SkinnedMesh( ${1:geometry}, ${2:material});$0" },
+              { "trigger": "THREE.Sprite", "contents": "THREE.Sprite( ${1:parameters} );$0" },
+
+              { "trigger": "THREE.CanvasRenderer", "contents": "THREE.CanvasRenderer( ${1:parameters} );$0" },
+              { "trigger": "THREE.DOMRenderer", "contents": "THREE.DOMRenderer();$0" },
+              { "trigger": "THREE.SVGRenderer", "contents": "THREE.SVGRenderer();$0" },
+              { "trigger": "THREE.WebGLRenderer", "contents": "THREE.WebGLRenderer( ${1:parameters} );$0" },
+              { "trigger": "THREE.WebGLRenderTarget", "contents": "THREE.WebGLRenderTarget( width, height, options );$0" },
+              { "trigger": "THREE.WebGLRenderTargetCube", "contents": "THREE.WebGLRenderTargetCube( width, height, options );$0" },
+              { "trigger": "THREE.ShaderChunk", "contents": "THREE.ShaderChunk;$0" },
+              { "trigger": "THREE.ShaderLib", "contents": "THREE.ShaderLib;$0" },
+
+              { "trigger": "THREE.RenderableFace3", "contents": "THREE.RenderableFace3();$0" },
+              { "trigger": "THREE.RenderableFace4", "contents": "THREE.RenderableFace4();$0" },
+              { "trigger": "THREE.RenderableLine", "contents": "THREE.RenderableLine();$0" },
+              { "trigger": "THREE.RenderableObject", "contents": "THREE.RenderableObject();$0" },
+              { "trigger": "THREE.RenderableParticle", "contents": "THREE.RenderableParticle();$0" },
+              { "trigger": "THREE.RenderableVertex", "contents": "THREE.RenderableVertex();$0" },
+
+              { "trigger": "THREE.Fog", "contents": "THREE.Fog( hex, near, far );$0" },
+              { "trigger": "THREE.FogExp2", "contents": "THREE.FogExp2( hex, density );$0" },
+
+              { "trigger": "THREE.Scene", "contents": "THREE.Scene();$0" },
+              
+              { "trigger": "THREE.DataTexture", "contents": "THREE.DataTexture( data, width, height, format, type, mapping, wrapS, wrapT, magFilter, minFilter );$0" },
+              { "trigger": "THREE.Texture", "contents": "THREE.Texture( image, mapping, wrapS, wrapT, magFilter, minFilter, format, type );$0" },
+
+              { "trigger": "THREE.ColorUtils", "contents": "THREE.ColorUtils$0" },
+              { "trigger": "THREE.GeometryUtils", "contents": "THREE.GeometryUtils$0" },
+              { "trigger": "THREE.ImageUtils", "contents": "THREE.ImageUtils$0" },
+              { "trigger": "THREE.SceneUtils", "contents": "THREE.SceneUtils$0" },
+              { "trigger": "THREE.ShaderUtils", "contents": "THREE.ShaderUtils$0" },
+
+              { "trigger": "THREE.Animation", "contents": "THREE.Animation( root, data, interpolationType, JITCompile );$0" },
+              { "trigger": "THREE.AnimationHandler", "contents": "THREE.AnimationHandler();$0" },
+              { "trigger": "THREE.AnimationMorphTarget", "contents": "THREE.AnimationMorphTarget( root, data );$0" },
+              { "trigger": "THREE.KeyFrameAnimation", "contents": "THREE.KeyFrameAnimation( root, data, JITCompile );$0" },
+
+              { "trigger": "THREE.CombinedCamera", "contents": "THREE.CombinedCamera( width, height, fov, near, far, orthonear, orthofar );$0" },
+              { "trigger": "THREE.CubeCamera", "contents": "THREE.CubeCamera( near, far, cubeResolution );$0" },
+
+              { "trigger": "THREE.FirstPersonControls", "contents": "THREE.FirstPersonControls( object, domElement );$0" },
+              { "trigger": "THREE.FlyControls", "contents": "THREE.FlyControls( object, domElement );$0" },
+              { "trigger": "THREE.PathControls", "contents": "THREE.PathControls( object, domElement );$0" },
+              { "trigger": "THREE.RollControls", "contents": "THREE.RollControls( object, domElement );$0" },
+              { "trigger": "THREE.TrackballControls", "contents": "THREE.TrackballControls( object, domElement );$0" },
+
+              { "trigger": "THREE.BufferGeometry", "contents": "THREE.BufferGeometry();$0" },
+              { "trigger": "THREE.Curve", "contents": "THREE.Curve();$0" },
+              { "trigger": "THREE.CurvePath", "contents": "THREE.CurvePath();$0" },
+              { "trigger": "THREE.EventTarget", "contents": "THREE.EventTarget();$0" },
+              { "trigger": "THREE.Gyroscope", "contents": "THREE.Gyroscope();$0" },
+              { "trigger": "THREE.Path", "contents": "THREE.Path( points );$0" },
+              { "trigger": "THREE.Shape", "contents": "THREE.Shape();$0" },
+              { "trigger": "THREE.TextPath", "contents": "THREE.TextPath( text, parameters );$0" },
+
+              { "trigger": "THREE.CubeGeometry", "contents": "THREE.CubeGeometry( width, height, depth, segmentsWidth, segmentsHeight, segmentsDepth, materials, sides );$0" },
+              { "trigger": "THREE.CylinderGeometry", "contents": "THREE.CylinderGeometry( radiusTop, radiusBottom, height, segmentsRadius, segmentsHeight, openEnded );$0" },
+              { "trigger": "THREE.ExtrudeGeometry", "contents": "THREE.ExtrudeGeometry( shapes, options );$0" },
+              { "trigger": "THREE.IcosahedronGeometry", "contents": "THREE.IcosahedronGeometry( radius, detail );$0" },
+              { "trigger": "THREE.LatheGeometry", "contents": "THREE.LatheGeometry( points, steps, angle );$0" },
+              { "trigger": "THREE.OctahedronGeometry", "contents": "THREE.OctahedronGeometry( radius, detail );$0" },
+              { "trigger": "THREE.PlaneGeometry", "contents": "THREE.PlaneGeometry( width, depth, segmentsWidth, segmentsDepth );$0" },
+              { "trigger": "THREE.PolyhedronGeometry", "contents": "THREE.PolyhedronGeometry( vertices, faces, radius, detail );$0" },
+              { "trigger": "THREE.SphereGeometry", "contents": "THREE.SphereGeometry( radius, segmentsWidth, segmentsHeight, phiStart, phiLength, thetaStart, thetaLength );$0" },
+              { "trigger": "THREE.TetrahedronGeometry", "contents": "THREE.TetrahedronGeometry( radius, detail );$0" },
+              { "trigger": "THREE.TextGeometry", "contents": "THREE.TextGeometry( text, parameters );$0" },
+              { "trigger": "THREE.TorusGeometry", "contents": "THREE.TorusGeometry( radius, tube, segmentsR, segmentsT, arc );$0" },
+              { "trigger": "THREE.TorusKnotGeometry", "contents": "THREE.TorusKnotGeometry( radius, tube, segmentsR, segmentsT, p, q, heightScale );$0" },
+
+              { "trigger": "THREE.AxisHelper", "contents": "THREE.AxisHelper();$0" },
+              { "trigger": "THREE.CameraHelper", "contents": "THREE.CameraHelper();$0" },
+
+              { "trigger": "THREE.SubdivisionModifier", "contents": "THREE.SubdivisionModifier( subdivisions );$0" },
+
+              { "trigger": "THREE.LensFlare", "contents": "THREE.LensFlare( texture, size, distance, blending, color );$0" },
+
+              { "trigger": "THREE.LensFlarePlugin", "contents": "THREE.LensFlarePlugin();$0" },
+              { "trigger": "THREE.ShadowMapPlugin", "contents": "THREE.ShadowMapPlugin();$0" },
+              { "trigger": "THREE.SpritePlugin", "contents": "THREE.SpritePlugin();$0" },
+
+              { "trigger": "THREE.ShaderFlares", "contents": "THREE.ShaderFlares;$0" },
+              { "trigger": "THREE.ShaderSprite", "contents": "THREE.ShaderSprite;$0" }  
+        ]
+}
