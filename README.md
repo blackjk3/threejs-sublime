@@ -10,6 +10,10 @@ http://kadrmasconcepts.com/blog/
 ## Installation
 Threejs sublime can be installed through package control.
 
+- Command + Shift + P
+- Package Control Install Package
+- Select Three.js Autocomplete
+
 ## Usage
 If everything is installed correctly you should be able to start typing 'THREE.' and get auto completion. Enjoy!
 
