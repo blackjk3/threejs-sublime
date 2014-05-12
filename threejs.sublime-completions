@@ -33,7 +33,7 @@
 
               { "trigger": "THREE.Light", "contents": "THREE.Light( ${1:hex} );$0" },
               { "trigger": "THREE.AmbientLight", "contents": "THREE.AmbientLight( ${1:hex} );$0" },
-              { "trigger": "THREE.DirectionalLight", "contents": "THREE.DirectionalLight( ${1:hex, ${2:intensity}, ${3:distance} );$0" },
+              { "trigger": "THREE.DirectionalLight", "contents": "THREE.DirectionalLight( ${1:hex}, ${2:intensity} );$0" },
               { "trigger": "THREE.PointLight", "contents": "THREE.PointLight( ${1:color}, ${2:intensity}, ${3:distance} );$0" },
               { "trigger": "THREE.SpotLight", "contents": "THREE.SpotLight();$0" },
               
