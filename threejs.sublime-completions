@@ -1,9 +1,152 @@
 {
         "scope": "source.js,source.js.embedded.html,source.coffee",
-        "version": "r49",
+        "version": "r71", // Based on r49 completions, with some fixes.
         "completions":
         [
               "THREE",
+              
+              /**
+                     INDEX
+                     
+                     1. Constants.
+                     2. Methods.
+              **/
+              
+              /*==================================
+              =           1. Constants.          =
+              ==================================*/
+              
+              /*==========  Custom Blending Equation.  ==========*/
+              
+              // Equations
+              "THREE.AddEquation",
+              "THREE.SubtractEquation",
+              "THREE.ReverseSubtractEquation",
+              "THREE.MinEquation",
+              "THREE.MaxEquation",
+              
+              // Destination Factors
+              "THREE.ZeroFactor",
+              "THREE.OneFactor",
+              "THREE.SrcColorFactor",
+              "THREE.OneMinusSrcColorFactor",
+              "THREE.SrcAlphaFactor",
+              "THREE.OneMinusSrcAlphaFactor",
+              "THREE.DstAlphaFactor",
+              "THREE.OneMinusDstAlphaFactor",
+              
+              // Source Factors
+              "THREE.DstColorFactor",
+              "THREE.OneMinusDstColorFactor",
+              "THREE.SrcAlphaSaturateFactor",
+              
+              /*==========  Materials.  ==========*/
+              
+              // Side.
+              "THREE.FrontSide",
+              "THREE.BackSide",
+              "THREE.DoubleSide",
+              // Shading.
+              "THREE.NoShading",
+              "THREE.FlatShading",
+              "THREE.SmoothShading",
+              // Colors.
+              "THREE.NoColors",
+              "THREE.FaceColors",
+              "THREE.VertexColors",
+              // Blending Mode.
+              "THREE.NoBlending",
+              "THREE.NormalBlending",
+              "THREE.AdditiveBlending",
+              "THREE.SubtractiveBlending",
+              "THREE.MultiplyBlending",
+              "THREE.CustomBlending",
+              
+              /*==========  GL State.  ==========*/
+
+              // Cull Face
+              "THREE.CullFaceNone",
+              "THREE.CullFaceBack",
+              "THREE.CullFaceFront",
+              "THREE.CullFaceFrontBack",
+              
+              // Front Face Direction
+              "THREE.FrontFaceDirectionCW",
+              "THREE.FrontFaceDirectionCCW",
+              
+              /*==========  Shadowing Type.  ==========*/
+
+              // Shadow Map
+              "THREE.BasicShadowMap",
+              "THREE.PCFShadowMap",
+              "THREE.PCFSoftShadowMap",
+              
+              /*==========  Texture.  ==========*/
+              
+              // Operations
+              "THREE.MultiplyOperation",
+              "THREE.MixOperation",
+              "THREE.AddOperation",
+              
+              // Mapping Modes
+              "THREE.UVMapping",
+              "THREE.CubeReflectionMapping",
+              "THREE.CubeRefractionMapping",
+              "THREE.EquirectangularReflectionMapping",
+              "THREE.EquirectangularRefractionMapping",
+              "THREE.SphericalReflectionMapping",
+              
+              // Wrapping Modes
+              "THREE.RepeatWrapping",
+              "THREE.ClampToEdgeWrapping",
+              "THREE.MirroredRepeatWrapping",
+              
+              // Filters
+              "THREE.NearestFilter",
+              "THREE.NearestMipMapNearestFilter",
+              "THREE.NearestMipMapLinearFilter",
+              "THREE.LinearFilter",
+              "THREE.LinearMipMapNearestFilter",
+              "THREE.LinearMipMapLinearFilter",
+              
+              // Data Types
+              "THREE.UnsignedByteType",
+              "THREE.ByteType",
+              "THREE.ShortType",
+              "THREE.UnsignedShortType",
+              "THREE.IntType",
+              "THREE.UnsignedIntType",
+              "THREE.FloatType",
+              "THREE.HalfFloatType",
+              
+              // Pixel Types
+              "THREE.UnsignedShort4444Type",
+              "THREE.UnsignedShort5551Type",
+              "THREE.UnsignedShort565Type",
+              
+              // Pixel Formats
+              "THREE.AlphaFormat",
+              "THREE.RGBFormat",
+              "THREE.RGBAFormat",
+              "THREE.LuminanceFormat",
+              "THREE.LuminanceAlphaFormat",
+              "THREE.RGBEFormat",
+              
+              // DDS / ST3C Compressed Texture Formats
+              "THREE.RGB_S3TC_DXT1_Format",
+              "THREE.RGBA_S3TC_DXT1_Format",
+              "THREE.RGBA_S3TC_DXT3_Format",
+              "THREE.RGBA_S3TC_DXT5_Format",
+              
+              // PVRTC Compressed Texture Formats
+              "THREE.RGB_PVRTC_4BPPV1_Format",
+              "THREE.RGB_PVRTC_2BPPV1_Format",
+              "THREE.RGBA_PVRTC_4BPPV1_Format",
+              "THREE.RGBA_PVRTC_2BPPV1_Format",
+              
+              /*================================
+              =          2. Methods.           =
+              ================================*/
               
               { "trigger": "THREE.PerspectiveCamera", "contents": "THREE.PerspectiveCamera( ${1:fov}, ${2:aspect}, ${3:near}, ${4:far} );$0" },
               { "trigger": "THREE.OrthographicCamera", "contents": "THREE.OrthographicCamera( ${1:left}, ${2:right}, ${3:top}, ${4:bottom}, ${5:near}, ${6:far} );$0" },
@@ -42,23 +185,25 @@
               { "trigger": "THREE.JSONLoader", "contents": "THREE.JSONLoader();$0" },
               { "trigger": "THREE.SceneLoader", "contents": "THREE.SceneLoader();$0" },
               
-              { "trigger": "THREE.Material", "contents": "THREE.Material( ${1:parameters} );$0" },
-              { "trigger": "THREE.LineBasicMaterial", "contents": "THREE.LineBasicMaterial( ${1:parameters} );$0" },
-              { "trigger": "THREE.MeshBasicMaterial", "contents": "THREE.MeshBasicMaterial( ${1:parameters} );$0" },
-              { "trigger": "THREE.MeshDepthMaterial", "contents": "THREE.MeshDepthMaterial( ${1:parameters} );$0" },
-              { "trigger": "THREE.MeshFaceMaterial", "contents": "THREE.MeshFaceMaterial( ${1:parameters} );$0" },
-              { "trigger": "THREE.MeshLambertMaterial", "contents": "THREE.MeshLambertMaterial( ${1:parameters} );$0" },
-              { "trigger": "THREE.MeshNormalMaterial", "contents": "THREE.MeshNormalMaterial( ${1:parameters} );$0" },
-              { "trigger": "THREE.MeshPhongMaterial", "contents": "THREE.MeshPhongMaterial( ${1:parameters} );$0" },
-              { "trigger": "THREE.ParticleBasicMaterial", "contents": "THREE.ParticleBasicMaterial( ${1:parameters} );$0" },
-              { "trigger": "THREE.ParticleCanvasMaterial", "contents": "THREE.ParticleCanvasMaterial( ${1:parameters} );$0" },
-              { "trigger": "THREE.ParticleDOMMaterial", "contents": "THREE.ParticleDOMMaterial( ${1:parameters} );$0" },
-              { "trigger": "THREE.ShaderMaterial", "contents": "THREE.ShaderMaterial( ${1:parameters} );$0" },
-
+              { "trigger": "THREE.Material", "contents": "THREE.Material( ${1:id}, ${2:name}, ${3:opacity}, ${4:transparent}, ${5:blending} );$0" },
+              { "trigger": "THREE.LineBasicMaterial", "contents": "THREE.LineBasicMaterial( ${1:color}, ${2:linewidth}, ${3:linecap}, ${4:linejoin}, ${5:vertexColors} );$0" },
+              { "trigger": "THREE.MeshBasicMaterial", "contents": "THREE.MeshBasicMaterial( ${1:color}, ${2:map}, ${3:shading}, ${4:wireframe} );$0" },
+              { "trigger": "THREE.MeshDepthMaterial", "contents": "THREE.MeshDepthMaterial( ${1:morphTargets}, ${2:wireframe}, ${3:wireframeLinewidth} );$0" },
+              { "trigger": "THREE.MeshFaceMaterial", "contents": "THREE.MeshFaceMaterial( ${1:materials} );$0" },
+              { "trigger": "THREE.MeshLambertMaterial", "contents": "THREE.MeshLambertMaterial( ${1:color}, ${2:map}, ${3:shading}, ${4:wireframe} );$0" },
+              { "trigger": "THREE.MeshNormalMaterial", "contents": "THREE.MeshNormalMaterial( ${1:wireframe}, ${2:wireframeLinewidth}, ${3:morphTargets} );$0" },
+              { "trigger": "THREE.MeshPhongMaterial", "contents": "THREE.MeshPhongMaterial( ${1:color}, ${2:map}, ${3:shading}, ${4:wireframe} );$0" },
+              { "trigger": "THREE.PointCloudMaterial", "contents": "THREE.PointCloudMaterial( ${1:color}, ${2:map}, ${3:size}, ${4:vertexColors} );$0" },
+              //{ "trigger": "THREE.ParticleBasicMaterial", "contents": "THREE.ParticleBasicMaterial( ${1:parameters} );$0" },
+              //{ "trigger": "THREE.ParticleCanvasMaterial", "contents": "THREE.ParticleCanvasMaterial( ${1:parameters} );$0" },
+              //{ "trigger": "THREE.ParticleDOMMaterial", "contents": "THREE.ParticleDOMMaterial( ${1:parameters} );$0" },
+              { "trigger": "THREE.ShaderMaterial", "contents": "THREE.ShaderMaterial( ${1:uniforms}, ${2:attributes}, ${3:defines}, ${4:vertexShader} );$0" },
+              { "trigger": "THREE.RawShaderMaterial", "contents": "THREE.RawShaderMaterial( ${1:parameters} );$0" },
+              
               { "trigger": "THREE.Bone", "contents": "THREE.Bone( belongsToSkin );$0" },
               { "trigger": "THREE.Line", "contents": "THREE.Line( geometry, material, type );$0" },
-              { "trigger": "THREE.ShaderMaterial", "contents": "THREE.LOD();$0" },
-              { "trigger": "THREE.Mesh", "contents": "THREE.Mesh(${1:geometry}, ${2:material});$0" },
+              { "trigger": "THREE.LOD", "contents": "THREE.LOD( ${1:objects});$0" },
+              { "trigger": "THREE.Mesh", "contents": "THREE.Mesh( ${1:geometry}, ${2:material});$0" },
               { "trigger": "THREE.MorphAnimMesh", "contents": "THREE.MorphAnimMesh( ${1:geometry}, ${2:material});$0;" },
               { "trigger": "THREE.Particle", "contents": "THREE.Particle( ${1:material} );$0" },
               { "trigger": "THREE.ParticleSystem", "contents": "THREE.ParticleSystem( ${1:geometry}, ${2:material});$0" },
@@ -145,6 +290,6 @@
               { "trigger": "THREE.SpritePlugin", "contents": "THREE.SpritePlugin();$0" },
 
               { "trigger": "THREE.ShaderFlares", "contents": "THREE.ShaderFlares;$0" },
-              { "trigger": "THREE.ShaderSprite", "contents": "THREE.ShaderSprite;$0" }  
+              { "trigger": "THREE.ShaderSprite", "contents": "THREE.ShaderSprite;$0" }
         ]
 }
