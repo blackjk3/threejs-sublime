@@ -290,6 +290,7 @@
               { "trigger": "THREE.SpritePlugin", "contents": "THREE.SpritePlugin();$0" },
 
               { "trigger": "THREE.ShaderFlares", "contents": "THREE.ShaderFlares;$0" },
-              { "trigger": "THREE.ShaderSprite", "contents": "THREE.ShaderSprite;$0" }
+              { "trigger": "THREE.ShaderSprite", "contents": "THREE.ShaderSprite;$0" },
+              { "trigger": "THREE.BoxBufferGeometry", "contents": "THREE.BoxBufferGeometry(width, height, depth, segmentsWidth, segmentsHeight, segmentsDepth);$0" }
         ]
 }
